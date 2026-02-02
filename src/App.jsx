@@ -1,9 +1,10 @@
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-red-500">hello from main app</h1>
+        <div className="text-violet-300 font-zentry">
+      Tailwind config test
     </div>
+
   )
 }
 
