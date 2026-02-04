@@ -97,8 +97,8 @@ function Navbar() {
               />
 
               {/* for the music button  */}
-              <div class="relative inline-block group">
-                <button class="flex flex-row gap-0.5 px-4 py-2 text-sm font-medium text-white transition-all duration-300">
+              <div className="relative inline-block group">
+                <span className="flex flex-row gap-0.5 px-4 py-2 text-sm font-medium text-white transition-all duration-300">
                   {[1, 2, 3, 4].map((bar) => (
                     <div
                       key={bar}
@@ -106,26 +106,26 @@ function Navbar() {
                       style={{ animationDelay: `${bar * 0.1}s` }}
                     />
                   ))}
-                </button>
+                </span>
 
-                <div class="absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 bottom-full left-1/2 -translate-x-1/2 mb-2 transition-all duration-300 ease-in-out">
-                  <div class="relative px-4 py-2 text-sm text-white bg-gray-900 rounded-lg backdrop-blur-sm bg-opacity-90 border border-gray-700/50 shadow-xl">
-                    <div class="flex items-center space-x-2">
+                <div className="absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 bottom-full left-1/2 -translate-x-1/2 mb-2 transition-all duration-300 ease-in-out">
+                  <div className="relative px-4 py-2 text-sm text-white bg-gray-900 rounded-lg backdrop-blur-sm bg-opacity-90 border border-gray-700/50 shadow-xl">
+                    <div className="flex items-center space-x-2">
                       <svg
-                        class="w-4 h-4 text-blue-500"
+                        className="w-4 h-4 text-blue-500"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
                         <path
-                          fill-rule="evenodd"
+                          fillRule="evenodd"
                           d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                          clip-rule="evenodd"
+                          clipRule="evenodd"
                         ></path>
                       </svg>
                       <span>Play</span>
                     </div>
 
-                    <div class="absolute left-1/2 -translate-x-1/2 -bottom-1 w-2 h-2 bg-gray-900 border-r border-b border-gray-700/50 transform rotate-45"></div>
+                    <div className="absolute left-1/2 -translate-x-1/2 -bottom-1 w-2 h-2 bg-gray-900 border-r border-b border-gray-700/50 transform rotate-45"></div>
                   </div>
                 </div>
               </div>
