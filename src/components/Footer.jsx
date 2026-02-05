@@ -30,7 +30,8 @@ function Footer() {
         </div>
 
          <a
-          href="#privacy-policy"
+         target="_blank"
+          href="https://zentry.com/legal/privacy"
           className="text-center text-sm font-light hover:underline md:text-right"
         >
           Privacy Policy
